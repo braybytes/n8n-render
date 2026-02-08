@@ -8,16 +8,20 @@ services:
     envVars:
       - key: N8N_ENCRYPTION_KEY
         generateValue: true
+      - key: PORT
+        value: 10000
+      - key: N8N_PORT
+        value: 10000
       - key: DB_TYPE
         value: postgresdb
       - key: DB_POSTGRESDB_HOST
         sync: false
       - key: DB_POSTGRESDB_PORT
-        value: "6543"
+        sync: false
       - key: DB_POSTGRESDB_DATABASE
-        value: "postgres"
+        sync: false
       - key: DB_POSTGRESDB_USER
-        value: "postgres"
+        sync: false
       - key: DB_POSTGRESDB_PASSWORD
         sync: false
       - key: N8N_SECURE_COOKIE
